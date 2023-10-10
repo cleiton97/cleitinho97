@@ -1,8 +1,17 @@
-import Image from 'next/image'
+import Banner from "./componetes/Banner";
+import Header from "./componetes/Header";
+
+
+
 
 export default function Home() {
   return (
-    <h1 className= "text-center mt-10"> TESTE</h1>
-    
+    <div>
+      <Header/>
+      <Banner/>
+      
+    </div>
+
+
   )
 }
