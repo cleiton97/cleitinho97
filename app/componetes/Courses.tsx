@@ -1,3 +1,5 @@
+
+
 export default function Courses(){
     return(
         <main className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
@@ -6,6 +8,10 @@ export default function Courses(){
       CONHEÇA NOSSOS <span>CURSOS</span>
     </h2>
   </div>
+
+
+
+
   <div className="bg-[#4d4d4d] rounded-md pb-2">
     <a href="/curso_html.html">
       <img className="hover:scale-105" src="/img/html.svg" alt="" />

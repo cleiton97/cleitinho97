@@ -11,8 +11,7 @@ export  default function Banner() {
                 <a
                     className="text-[#3d3d3d] bg-white px-2 py-[4px] rounded hover:bg-[#00e77f] hover:text-white"
                     href="#"
-                >Informações</a
-                >
+                >Informações</a>
             </div>
         </div>
 

@@ -5,7 +5,7 @@ import Header from "./componetes/Header";
 
 
 
-
+export const revalidate=0
 export default function Home() {
   return (
     <div>
