@@ -1,6 +1,14 @@
+import { sql } from "@vercel/postgres;
+
 export default async function NewCourse(){
-    function saveCourse(){
+    async function saveCourse(FormData: FormData){       
         "use serve"
+        const title = FormData.get("title") as string;
+        const description = FormData.get("description") as string;
+        const url = FormData.get("url") as string;
+        await sql`INSERT INTO courses (title, description, url) VALUES ( ${title}, ${description}, ${url})`
+
+
         console.log("Acesso a função")
     }
     return(
@@ -10,7 +18,7 @@ export default async function NewCourse(){
                 <input>type="text" name ="title" placeholder="Digite o texto do cursos"</input><br/>
                 <input>type="text" name ="descirption" placeholder="Digite Descrição do curso"</input><br/>
                 <input>type="text" name ="url" placeholder="Digite a url da imagem"</input><br/>
-                <button formAction={save Course} className="text-white">SALVAR</button>
+                <button formAction={saveCourse} className="text-white">SALVAR</button>
             </form>
         </div>
 
